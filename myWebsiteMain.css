@@ -1,0 +1,65 @@
+/* dark grey background to make this easier on my eyes while site is under development */
+html {
+    background-color: #d3d3d3;
+
+}
+
+/* Type Selector sets default for all p elements */
+p {
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+}
+
+/* Class selector for objects main-title objects */
+.main-titles {
+    /* dark orange RGB code */
+    color: rgb(184, 88, 9);
+    /* Using relative units */
+    font-size: 3rem;
+}
+
+/* ID Selector fo object labeled summary */
+#summary {
+    /* blue hex code */
+    color: #0b2fa5;
+    font-size: 1rem;
+    /* making the summary text italicized */
+    font-style: italic;
+}
+
+/* Combinator selects all p tags within the main tag */
+main p {
+    /* dotted underline decoration */
+    text-decoration: underline dotted;
+}
+
+/* Relational Selector child all list items under the ul tag */
+ul>li {
+    /* font variant to style the font with small caps */
+    font-variant: small-caps;
+    /* hex for forest green */
+    color: #006321;
+    /* added padding to list items based on viewport size */
+    padding-left: 1vw;
+    padding-bottom: 1vh;
+
+}
+
+/* Pseudo-class selector will highlight redish orange when hovering over hyperlink */
+a:hover {
+    /* hex for orange */
+    color: #ff6347;
+}
+
+/* Additional Font Properties for all p tags within footer tags */
+footer p {
+    font-size: 1rem;
+    /* Styling fonts with font weight */
+    font-weight: bold;
+}
+
+/* fix image size */
+img {
+    max-height: 10%;
+    max-width: 10%;
+}
