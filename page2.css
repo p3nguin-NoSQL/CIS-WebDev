@@ -16,10 +16,14 @@ p {
     color: #8889da;
 }
 
+div {
+    font-family: 'Arial', sans-serif;
+    color: #8889da;
+}
 
 /* Class selector for objects main-title objects */
 .main-titles {
-    color: rgb(255, 0, 0);
+    color: #ff0000;
     font-size: 3rem;
     border-style: dotted;
     border-radius: 10rem;
@@ -35,7 +39,6 @@ p {
 
 /* Combinator selects all p tags within the main tag */
 main p {
-    /* dotted underline decoration */
     text-decoration: underline dotted;
 }
 
@@ -46,8 +49,25 @@ ul>li {
 
 }
 
+.columns {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.column {
+    padding: 2rem;
+    text-align: center;
+    border-style: dotted;
+    border-color: #2fd674;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 a:link {
-    color: #e216d1;
+    color: #4ddef1;
 }
 
 a:visited {
@@ -63,13 +83,12 @@ footer p {
     font-size: .75rem;
     font-weight: bold;
     text-align: left;
-    padding-top: 1rem;
 }
 
 /* fix image size */
 img {
-    padding-top: 3rem;
-    padding-bottom: 5rem;
-    max-height: 20%;
-    max-width: 20%;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    max-height: 15%;
+    max-width: 15%;
 }
