@@ -26,6 +26,33 @@ p {
     text-align: center;
 }
 
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    flex-direction: row; /* Change to column for vertical menu */
+    gap: 20px; /* Gap between menu items */
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #444;
+    transition: background-color 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: #555;
+}
+
 /* ID Selector fo object labeled summary */
 #summary {
     color: #f75a5a;
