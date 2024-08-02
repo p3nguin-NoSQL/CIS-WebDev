@@ -24,8 +24,10 @@ p {
     border-style: dotted;
     border-radius: 10rem;
     text-align: center;
+    font-variant: small-caps;
 }
 
+/*Settings for the menu bar*/
 .nav-menu {
     list-style: none;
     padding: 0;
@@ -45,10 +47,12 @@ p {
     color: white;
     padding: 10px 20px;
     border-radius: 4px;
+    /* Dark grey background. Good contrast for both font and background */
     background-color: #313030;
     transition: background-color 0.3s;
 }
 
+/* Darker background to show which item is being hovered*/
 .nav-menu a:hover {
     background-color: #000000;
 }
@@ -67,19 +71,19 @@ main p {
 
 /* Relational Selector child all list items under the ul tag */
 ul>li {
-    font-variant: small-caps;
+    font-variant: normal;
     color: #4ddef1;
 
 }
-
+/*normal link color*/
 a:link {
-    color: #e216d1;
-}
-
-a:visited {
     color: #5aad8b;
 }
-
+/*visited link color*/
+a:visited {
+    color: #e216d1;
+}
+/*hover link color*/
 a:hover {
     color: #3cff00;
 }
@@ -121,8 +125,8 @@ img {
 /* For mobile devices */
 @media (max-width: 600px) {
     body {
-        padding-left: 1rem;
         /* Reduce padding for small screens */
+        padding-left: 1rem;
     }
 
     /* Vertical menu for mobile */

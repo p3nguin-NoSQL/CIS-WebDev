@@ -28,6 +28,7 @@ div {
     border-style: dotted;
     border-radius: 10rem;
     text-align: center;
+    font-variant: small-caps;
 }
 
 .nav-menu {
@@ -71,7 +72,7 @@ main p {
 
 /* Relational Selector child all list items under the ul tag */
 ul>li {
-    font-variant: small-caps;
+    font-variant: normal;
     color: #4ddef1;
 
 }
@@ -94,11 +95,11 @@ ul>li {
 
 
 a:link {
-    color: #e216d1;
+    color: #5aad8b;
 }
 
 a:visited {
-    color: #5aad8b;
+    color: #e216d1;
 }
 
 a:hover {
