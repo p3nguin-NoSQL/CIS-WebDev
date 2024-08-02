@@ -29,6 +29,7 @@ div {
     border-radius: 10rem;
     text-align: center;
 }
+
 .nav-menu {
     list-style: none;
     padding: 0;
@@ -48,12 +49,12 @@ div {
     color: white;
     padding: 10px 20px;
     border-radius: 4px;
-    background-color: #444; /* Change background color if needed */
+    background-color: #313030;
     transition: background-color 0.3s;
 }
 
 .nav-menu a:hover {
-    background-color: #555;
+    background-color: #000000;
 }
 
 /* ID Selector fo object labeled summary */
@@ -93,11 +94,11 @@ ul>li {
 
 
 a:link {
-    color: #4ddef1;
+    color: #e216d1;
 }
 
 a:visited {
-    color: #4c00ff;
+    color: #5aad8b;
 }
 
 a:hover {
@@ -117,4 +118,57 @@ img {
     padding-bottom: 2rem;
     max-height: 15%;
     max-width: 15%;
+}
+
+/* For tablets and smaller devices */
+@media (max-width: 1024px) {
+    .nav-menu {
+        /* Vertical menu for smaller screens */
+        flex-direction: column;
+    }
+
+    main {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    /* Adjust font size for readability */
+    .main-titles {
+        font-size: 2.5rem;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 600px) {
+    body {
+        /* Reduce padding for small screens */
+        padding-left: 1rem;
+    }
+
+    /* Vertical menu for mobile */
+    .nav-menu {
+        flex-direction: column;
+        /* Reduce gap */
+        gap: 10px;
+    }
+
+    main {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    /* Adjust font size for readability */
+    .main-titles {
+        font-size: 2rem;
+    }
+
+    /* Adjust width for smaller screens */
+    img {
+        max-width: 15rem;
+    }
+
+    /* Adjust font size for readability */
+    footer p {
+        font-size: .65rem;
+    }
 }
