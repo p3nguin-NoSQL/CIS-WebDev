@@ -2,31 +2,34 @@
 <html lang="en">
 
 <head>
-    <!--Link to main.css-->
-    <link rel="stylesheet" href="page2.css">
-    <title> The Malware Muter </title>
+    <!-- Link to main.css -->
+    <link rel="stylesheet" href="additionalInfo.css">
+    <title>The Malware Muter</title>
 </head>
 
 <body>
+    <!-- Flex container for navigation menu -->
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li><a href="https://p3nguin-nosql.github.io/CIS-WebDev/index.html">Main Menu</a></li>
+            <li><a href="https://p3nguin-nosql.github.io/CIS-WebDev/malamuterInfo.html">Malamuter info</a></li>
+            <li><a href="https://p3nguin-nosql.github.io/CIS-WebDev/risks.html">Risks info</a></li>
+            <!-- Link to external site NIST -->
+            <li><a href="https://www.nccoe.nist.gov/publication/1800-4/VolB/" target="_blank">Learn from NIST.gov</a>
+            </li>
+            <!-- Link to placeholder -->
+            <!-- Scrolls to github link at the bottom -->
+            <li><a href="#contribute">Contribute to our project</a></li>
+        </ul>
+    </nav>
+
     <!-- Main content -->
     <main>
         <!-- Main header -->
         <h1 class="main-titles">The Malware Muter</h1>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="https://p3nguin-nosql.github.io/CIS-WebDev/index.html">Main Menu</a></li>
-                <li><a href="https://p3nguin-nosql.github.io/CIS-WebDev/malamuterInfo.html">Malamuter info</a></li>
-                <li><a href="https://p3nguin-nosql.github.io/CIS-WebDev/risks.html">Risks info</a></li>
-                <!--Link to external site NIST-->
-                <li><a href="https://www.nccoe.nist.gov/publication/1800-4/VolB/" target="_blank">Learn from
-                        NIST.gov</a></li>
-                <!--Link to placeholder--><!--Scrolls to github link at the bottom-->
-                <li><a href="#contribute">Contribute to our project</a></li>
 
-            </ul>
-        </nav>
-        <!-- Description paragraph-->
-        <p id="summary"> What you need to know about Malamuter </p>
+        <!-- Description paragraph -->
+        <p id="summary">What you need to know about Malamuter</p>
 
         <!-- Info about app -->
         <p>Malamuter is a Malware scanner for android devices.</p>
@@ -36,26 +39,37 @@
             <li>Dynamic Monitoring</li>
             <li>File extension blocklisting</li>
         </ul>
-        <div class="columns">
-            <div class="column">column 1
-                <div class="item">Item 1</div>
-                <div class="item">Item 2</div>
-            </div>
-            <div class="column">column 2
-                <div class="item">Item 3</div>
-                <div class="item">Item 4</div>
 
+        <!-- Flex container for additional sections -->
+        <div class="columns">
+            <div class="column">
+                <h2>Column 1</h2>
+                <p>Malware doesn't stand a chance</p>
+                <p>We will sniff out all malicious actions</p>
+            </div>
+            <div class="column">
+                <h2>Column 2</h2>
+                <p>We are the fastest at identifying new vulnerabilities</p>
+                <p>Feel safe and secure with our vulnerability tracker</p>
             </div>
         </div>
 
-        <!-- Image current image is showing as way too big, will fix at a later date. Real img location ends with .jpg?raw=true-->
+        <!-- Image -->
         <img src="https://raw.githubusercontent.com/p3nguin-NoSQL/CIS-WebDev/main/malamuter.png" alt="Malamuter">
     </main>
+
+    <!-- Grid component for additional information -->
+    <div class="grid-container">
+        <div class="grid-item">Fast Scanning</div>
+        <div class="grid-item">User Friendly</div>
+        <div class="grid-item">Comprehensive Coverage</div>
+        <div class="grid-item">Regular Updates</div>
+    </div>
 
     <!-- Footer -->
     <footer id="contribute">
         <!-- Link to another page -->
-        <p>For more information, visit<a href="https://github.com/p3nguin-NoSQL/CIS-WebDev"> my github</a></p>
+        <p>For more information, visit <a href="https://github.com/p3nguin-NoSQL/CIS-WebDev">my github</a></p>
         <p>Malamuter&trade; Taylor Pugh</p>
     </footer>
 </body>
