@@ -32,17 +32,6 @@ h1 {
 }
 
 /* ID selector for objects main-title objects */
-.main-title {
-    display: inline-block;
-    border-style: dotted;
-    padding: 1rem 2rem;
-    margin: 2rem;
-    border-radius: 5rem;
-    color: rgb(255, 0, 0);
-    font-size: 3rem;
-    font-variant: small-caps;
-}
-
 /* Flex container for navigation menu */
 .nav-menu {
     list-style: none;
