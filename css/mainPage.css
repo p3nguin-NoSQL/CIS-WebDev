@@ -19,7 +19,7 @@ body {
 /* Type Selector sets default for all p elements */
 p {
     text-align: center;
-    font-family: "Georgia";
+    font-family: 'Lucida Sans';
     color: #d4d5dd;
 }
 
@@ -208,7 +208,7 @@ footer p {
 }
 
 /* For tablets and smaller devices */
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
     .nav-menu {
         /* Vertical menu for smaller screens */
         flex-direction: row;
