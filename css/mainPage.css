@@ -50,12 +50,11 @@ h1 {
 }
 
 .title-container {
+    /* Relative positioning allows absolute positioning within it */
     text-align: center;
     align-self: center;
-    /* Relative positioning allows absolute positioning within it */
 }
 
-/* ID selector for objects main-title objects */
 .main-title {
     display: inline-block;
     border-style: ridge;
@@ -90,7 +89,6 @@ h1 {
     padding: 10px 20px;
     border-radius: 4px;
     background-color: #313030;
-    transition: background-color 0.3s;
 }
 
 .nav-menu a:hover {
@@ -254,10 +252,10 @@ footer p {
     .grid-wrapper {
         display: flex;
         justify-content: space-between;
-        margin-top: 1rem;
         /* Adjust to bring the grids closer to the columns */
+        margin-top: 1rem;
+        /* Align width of the wrapper with the columns */
         width: 60%;
-        /* Width of the wrapper aligned with the columns */
         margin-left: auto;
         margin-right: auto;
     }
@@ -308,9 +306,6 @@ footer p {
         font-size: 1rem;
     }
 
-    /* Adjust width for smaller screens */
-
-    /* Adjust font size for readability */
     footer p {
         font-size: 1rem;
     }
@@ -325,8 +320,6 @@ footer p {
         display: flex;
         margin-top: 1rem;
         gap: 0;
-        /* Adjust to bring the grids closer to the columns */
-        /* Width of the wrapper aligned with the columns */
     }
 
     .grid-container {
@@ -355,6 +348,5 @@ footer p {
         background-color: #0c3666;
         text-align: center;
         width: 10vw;
-        /* Set a fixed width for the grid items */
     }
 }
