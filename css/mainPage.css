@@ -228,9 +228,15 @@ footer p {
 /* For tablets and smaller devices */
 @media (max-width: 1200px) {
     .nav-menu {
-        /* Vertical menu for smaller screens */
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+    }
+
+    .nav-menu a {
+        text-decoration: none;
+        padding: 20px 10px;
+        border-radius: 4px;
+        background-color: #313030;
     }
 
 
@@ -278,23 +284,22 @@ footer p {
 }
 
 /* For mobile devices */
-@media (max-width: 600px) {
-    body {
-        /* Reduce padding for small screens */
-        padding-left: 1rem;
-    }
-
-    /* Vertical menu for mobile */
+@media (max-width: 800px) {
     .nav-menu {
         flex-direction: column;
-        /* Reduce gap */
-        gap: 10px;
         align-items: center;
+        gap: 10;
     }
 
-    main {
-        margin: 5px;
-        padding: 5px;
+    .nav-menu li {
+        font-size: 1rem;
+    }
+
+    .nav-menu a {
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        background-color: #313030;
     }
 
     /* Adjust font size for readability */
@@ -351,59 +356,5 @@ footer p {
         text-align: center;
         width: 10vw;
         /* Set a fixed width for the grid items */
-    }
-}
-
-@media (max-width: 300px) {
-
-    /* Vertical menu for mobile */
-    .nav-menu {
-        flex-direction: column;
-        /* Reduce gap */
-        gap: 10px;
-        align-items: center;
-    }
-
-    main {
-        margin: 5px;
-        padding: 5px;
-    }
-
-    /* Adjust font size for readability */
-    /* Adjust width for smaller screens */
-
-    /* Adjust font size for readability */
-    footer p {
-        font-size: 1rem;
-    }
-
-    .columns {
-        flex-direction: row;
-        align-items: center;
-        width: 100%;
-    }
-
-    .grid-wrapper {
-        display: flex;
-        width: 100%;
-        align-items: center;
-    }
-
-    .grid-container {
-        flex-direction: row;
-        width: 50%;
-        font-size: .8rem;
-        text-align: justify;
-    }
-
-    .grid-container.left {
-        flex-direction: row;
-        align-items: start;
-    }
-
-    .grid-container.right {
-        flex-direction: row;
-        align-items: end;
-
     }
 }

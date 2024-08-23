@@ -36,8 +36,6 @@ p {
     font-variant: normal;
     color: #d4d5dd;
     font-weight: bolder;
-    -webkit-text-stroke-color: #000000;
-    -webkit-text-stroke-width: .1px;
 }
 
 #ourgoal p {
@@ -58,7 +56,7 @@ h1 {
 
 .title-container {
     text-align: center;
-    align-self: center;
+    font-family: 'Gothic';
 }
 
 .main-title {
@@ -69,7 +67,6 @@ h1 {
     -webkit-text-stroke-color: #000000;
     -webkit-text-stroke-width: none;
     padding-bottom: 0;
-    font-family: 'Gothic';
 }
 
 .nav-menu {
@@ -82,13 +79,8 @@ h1 {
     gap: 20px;
 }
 
-.nav-menu li {
-    margin: 0;
-}
-
 .nav-menu a {
     text-decoration: none;
-    color: white;
     padding: 10px 20px;
     border-radius: 4px;
     background-color: #313030;
@@ -113,18 +105,11 @@ ul>li {
     align-items: center;
 }
 
-.main-list {
-    list-style-position: inside;
-    padding-left: 0;
-    margin: 0 auto;
-    text-align: left;
-}
-
 .columns {
     display: flex;
-    flex-direction: row;
+    text-align: center;
     align-content: center;
-    align-items: stretch;
+    flex-direction: row;
     width: 100%;
     gap: 0;
 }
@@ -138,29 +123,14 @@ ul>li {
 }
 
 .column {
-    text-align: center;
     flex: 1;
     padding: 1%;
 }
 
-#column-2 h2,
-p {
-    text-align: center;
-}
-
-#column-1 {
-    order: 1;
-    /* First column */
-}
-
-#column-2 {
-    order: 3;
-    /* Swapping second and third columns */
-}
-
-#column-3 {
-    order: 2;
-    /* Swapping second and third columns */
+.bottom-text {
+    color: #ffffff;
+    font-family: 'Gothic';
+    font-size: 1.2rem;
 }
 
 a:link {
@@ -195,6 +165,7 @@ footer p {
         background-color: #313030;
         text-align: end;
     }
+
 
     ul>li {
         font-size: small;
@@ -268,6 +239,82 @@ footer p {
         border-radius: 4px;
         background-color: #313030;
     }
+
+
+    ul>li {
+        font-size: small;
+        text-align: left;
+    }
+
+    .main-titles {
+        font-size: 1%;
+        display: inline-block;
+        color: rgb(255, 255, 255);
+        font-variant: small-caps;
+        padding-bottom: 0;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    .columns {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .column {
+        flex-direction: column;
+        border: none;
+        border: 1px solid #4ddef1;
+        text-align: center;
+    }
+
+    #column-1 {
+        order: 1;
+        /* First column */
+        text-align: center;
+    }
+
+    #column-1 h2 {
+        text-align: center;
+    }
+
+    #column-2 {
+        order: 2;
+        /* Swapping second and third columns */
+    }
+
+    #column-3 {
+        order: 3;
+        /* Swapping second and third columns */
+    }
+
+    #column-3 h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding-left: 1rem;
+        background-image: none;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .nav-menu a {
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        background-color: #313030;
+    }
+
 
     main {
         margin: 5px;
