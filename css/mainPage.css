@@ -16,11 +16,27 @@ body {
     margin: 0;
 }
 
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/malamuter_background.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 5%;
+    pointer-events: none;
+    /* Prevent the logo from blocking interactions with content */
+}
+
 /* Type Selector sets default for all p elements */
 p {
     text-align: center;
     font-family: 'Lucida Sans';
     color: #d4d5dd;
+    margin: 0;
 }
 
 div {
@@ -50,8 +66,7 @@ h1 {
     color: rgb(255, 255, 255);
     font-size: 5rem;
     font-variant: small-caps;
-    -webkit-text-stroke-color: #000000;
-    -webkit-text-stroke-width: 1px;
+    font-family: 'Gothic';
 }
 
 /* Flex container for navigation menu */
@@ -83,12 +98,13 @@ h1 {
 }
 
 /* ID Selector for object labeled summary */
-#summary {
+.summary {
     color: #ffffff;
     font-family: 'Lucida Sans';
     font-size: 2rem;
     -webkit-text-stroke-color: #000000;
-    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-width: 100%;
+    margin-top: 0;
 }
 
 /* Combinator selects all p tags within the main tag */
@@ -159,6 +175,8 @@ ul>li {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    font-variant: small-caps;
+    font-weight: bold;
 }
 
 .grid-container.left {
@@ -208,10 +226,10 @@ footer p {
 }
 
 /* For tablets and smaller devices */
-@media (max-width: 1080px) {
+@media (max-width: 1200px) {
     .nav-menu {
         /* Vertical menu for smaller screens */
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
     }
 
@@ -305,10 +323,12 @@ footer p {
         /* Adjust to bring the grids closer to the columns */
         /* Width of the wrapper aligned with the columns */
     }
+
     .grid-container {
         width: 100%;
         gap: 0;
     }
+
     .grid-container.left {
         width: 100%;
         height: 100%;
@@ -322,6 +342,7 @@ footer p {
         width: 100%;
         height: 100%;
     }
+
     .grid-item {
         text-align: left;
         font-size: .8rem;
@@ -334,6 +355,7 @@ footer p {
 }
 
 @media (max-width: 300px) {
+
     /* Vertical menu for mobile */
     .nav-menu {
         flex-direction: column;

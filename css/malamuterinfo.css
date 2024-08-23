@@ -67,8 +67,9 @@ h1 {
     font-size: 5rem;
     font-variant: small-caps;
     -webkit-text-stroke-color: #000000;
-    -webkit-text-stroke-width: thin;
+    -webkit-text-stroke-width: none;
     padding-bottom: 0;
+    font-family: 'Gothic';
 }
 
 .nav-menu {
@@ -196,8 +197,6 @@ footer p {
         display: inline-block;
         color: rgb(255, 255, 255);
         font-variant: small-caps;
-        -webkit-text-stroke-color: #000000;
-        -webkit-text-stroke-width: thin;
         padding-bottom: 0;
     }
 
@@ -207,14 +206,20 @@ footer p {
     }
     .columns{
         flex-direction: column;
+        text-align: center;
     }
     .column{
         flex-direction: column;
         border: none;
         border: 1px solid #4ddef1;
+        text-align: center;
     }
     #column-1 {
         order: 1; /* First column */
+        text-align: center;
+    }
+    #column-1 h2{
+        text-align: center;
     }
     
     #column-2 {
@@ -223,6 +228,9 @@ footer p {
     
     #column-3 {
         order: 3; /* Swapping second and third columns */
+    }
+    #column-3 h2{
+        text-align: center;
     }
 }
 
