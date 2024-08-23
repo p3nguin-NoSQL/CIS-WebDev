@@ -8,11 +8,12 @@
 </head>
 
 <body>
+    <div class="logo"></div>
     <!-- Flex container for navigation menu -->
     <nav class="navbar">
         <ul class="nav-menu">
             <li><a href="index.html">Main Menu</a></li>
-            <li><a href="malamuterInfo.html">Malamuter info</a></li>
+            <li><a href="malamuterInfo.html">How it works</a></li>
             <li><a href="risks.html">Risks info</a></li>
             <!-- Link to external site NIST -->
             <li><a href="https://www.nccoe.nist.gov/publication/1800-4/VolB/" target="_blank">Learn from NIST.gov</a>
@@ -22,49 +23,45 @@
             <li><a href="#contribute">Contribute to our project</a></li>
         </ul>
     </nav>
-
     <!-- Main content -->
     <main>
         <!-- Main header -->
         <div class="title-container">
-            <h1 class="main-title">The Malware Muter</h1>
+            <h1 class="main-title">what you need to know about malamuter</h1>
         </div>
 
         <!-- Description paragraph -->
-        <p id="summary">What you need to know about Malamuter</p>
-
-        <!-- Info about app -->
-        <p>Malamuter is a Malware scanner for android devices.</p>
-        <p>The scanner has multiple features to help guard against malware. Including the following:</p>
-        <ul>
-            <li>Signature based detection</li>
-            <li>Dynamic Monitoring</li>
-            <li>File extension blocklisting</li>
-        </ul>
+        <p class="summary">Malamuter is a Malware scanner for android devices.</p>
+        <p class="summary">Our scanner has multiple features to help guard against malware. Including the following:</p>
 
         <!-- Flex container for additional sections -->
         <div class="columns">
-            <div class="column">
-                <h2>Column 1</h2>
-                <p>Malware doesn't stand a chance</p>
-                <p>We will sniff out all malicious actions</p>
+            <div class="column" id="column-1">
+                <h2>Detection Techniques</h2>
+                <p>- Signature Based Detection</p>
+                <p>- Dynamic Monitoring</p>
+                <p>- File Extention Block Listing</p>
+                <p>- Behavior Based Detection</p>
             </div>
-            <div class="column">
-                <h2>Column 2</h2>
-                <p>We are the fastest at identifying new vulnerabilities</p>
-                <p>Feel safe and secure with our vulnerability tracker</p>
+            <div class="column" id="column-2">
+                <h2>Types of Malware</h2>
+                <p>- rootkits</p>
+                <p>- Spyware/Keyloggers/Trojan Horses</p>
+                <p>- Adware</p>
+                <p>- Worms</p>
+                <p>- Rootkits</p>
+            </div>
+            <div class="column" id="column-3">
+                <h2>Our goal</h2>
+                <p>We aim to help our users make the best possible decisions regarding the security of their mobile
+                    data.</p>
+                <p>Our scanner utilizes several different open source reposiitories, we align our technical
+                    implementation to the MITRE ATT&CK framework.</p>
+                <p>Other scanners can be very intense on system resources, that's why we put a great deal of focus into
+                    ensuring our scanner is optimized as much as possible for mobile devices</p>
             </div>
         </div>
     </main>
-
-    <!-- Grid component for additional information -->
-    <div class="grid-container">
-        <div class="grid-item">Fast Scanning</div>
-        <div class="grid-item">User Friendly</div>
-        <div class="grid-item">Max Coverage</div>
-        <div class="grid-item">Regular Updates</div>
-    </div>
-
     <!-- Footer -->
     <footer id="contribute">
         <!-- Link to another page -->
