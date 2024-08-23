@@ -193,6 +193,12 @@ footer p {
 
     .main-titles {
         font-size: 1%;
+        display: inline-block;
+        color: rgb(255, 255, 255);
+        font-variant: small-caps;
+        -webkit-text-stroke-color: #000000;
+        -webkit-text-stroke-width: thin;
+        padding-bottom: 0;
     }
 
     h2 {
